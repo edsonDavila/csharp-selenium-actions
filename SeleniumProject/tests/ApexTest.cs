@@ -7,13 +7,8 @@ namespace SeleniumProject;
 public class ApexTest : BaseTest
 {
 
-    [SetUp]
-    public void Setup()
-    {
-
-    }
-
     [Test]
+    [Category("Apex")]
     public void ApexTest1()
     {
         test = ExtentSetup.extentReports.CreateTest("Apex Contact Us");

@@ -8,12 +8,8 @@ public class GoogleTest : BaseTest
 {
 
     private GooglePage googlePage;
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [Test]
+    [Category("google")]
     public void Test1()
     {
         test = ExtentSetup.extentReports.CreateTest("Test 1");
