@@ -1,0 +1,13 @@
+{
+  "theme": "Dark",
+  "encoding": "utf-8",
+  "protocol": "HTTPS",
+  "timelineEnabled": true,
+  "offlineMode": true,
+  "thumbnailForBase64": false,
+  "documentTitle": "C# Selenium Report",
+  "reportName": "C# Selenium Report",
+  "timeStampFormat": "MMM dd, yyyy HH:mm:ss a",
+  "js":"",
+  "css": ""
+}
