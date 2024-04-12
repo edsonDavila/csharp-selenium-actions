@@ -16,7 +16,9 @@ namespace SeleniumProject
         public void initialize()
 
         {
-            WebDriverManager.driver = new ChromeDriver();
+            var options = new ChromeOptions();
+            options.AddArgument("--headless=new");
+            WebDriverManager.driver = new ChromeDriver(options);
         }
 
         [TearDown]

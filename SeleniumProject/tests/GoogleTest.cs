@@ -22,7 +22,7 @@ public class GoogleTest : BaseTest
         WebDriverManager.driver.Navigate().GoToUrl("https://google.com");
         googlePage.TypeOnSearchBar(textToSearch);
         string actualText = googlePage.GetLinkText();
-        googlePage.AssertEquals(textToSearch+"s",actualText,"Apex Link Text Are Equals","The Apex link text are not equal");
+        googlePage.AssertEquals(textToSearch,actualText,"Apex Link Text Are Equals","The Apex link text are not equal");
     }
 
 
