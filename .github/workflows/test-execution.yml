@@ -55,11 +55,11 @@ jobs:
     # Execute all unit tests in the solution
       - name: Execute Apex tests
         run: dotnet test --filter TestCategory=Apex
-        
+
       - name: Upload Report
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: googleReport
+          name: apexReport
           path: SeleniumProject/test-output/**
           if-no-files-found: error
           retention-days: 90
