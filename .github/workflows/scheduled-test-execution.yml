@@ -1,7 +1,8 @@
 name: Selenium TC execution
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "0 4,16 * * 1-5"
 
 jobs:
 
