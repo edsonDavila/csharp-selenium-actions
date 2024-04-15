@@ -26,6 +26,14 @@ jobs:
     - name: Execute Google tests
       run: dotnet test --filter TestCategory=google
 
+    - name: Upload Report
+      uses: actions/upload-artifact@v4.3.1
+      with:
+        name: googleReport
+        path: SeleniumProject/test-output/**
+        if-no-files-found: error
+        retention-days: 90
+
 
   Apex-tests:
 
@@ -47,3 +55,11 @@ jobs:
     # Execute all unit tests in the solution
       - name: Execute Apex tests
         run: dotnet test --filter TestCategory=Apex
+        
+      - name: Upload Report
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: googleReport
+          path: SeleniumProject/test-output/**
+          if-no-files-found: error
+          retention-days: 90
