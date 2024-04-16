@@ -1,4 +1,4 @@
-name: Selenium TC execution
+name: Scheduled TC execution
 
 on:
   schedule:
